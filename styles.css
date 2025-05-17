@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Tagesschrift';
+    
+}
+body{
+    background-color:  #D9C0AA
 }
 
 .heading{
@@ -24,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
     
 }
 
@@ -45,6 +50,10 @@
     color: #ffedd8;
     cursor: pointer;
     margin: 10px;
+  
+}
+.calculator form input:hover{
+     transform: scale(1.08);
 }
 
 form .display{
@@ -89,4 +98,38 @@ a{color: black;}
 a:hover{
     color: black;
     text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+    .heading {
+        font-size: 40px;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .calculator {
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .calculator form input {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+        margin: 8px;
+    }
+
+    form .display input {
+        font-size: 30px;
+    }
+
+    form input.equal {
+        width: 100px;
+    }
+
+    .footer {
+        font-size: 16px;
+        padding: 15px;
+    }
 }
